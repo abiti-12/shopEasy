@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <form id="checkout-form">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required>
+
+            <textarea
+                id="address"
+                placeholder="Delivery Address"
+                required>
+            </textarea>
+
+            <button type="submit">
+
+                <label for="payment">
+    Payment Method
+</label>
+
+<select id="payment" required>
+
+    <option value="chapa">Chapa</option>
+
+    <option value="telebirr">Telebirr </option>
+
+    <option value="santimpay">SantimPay</option>
+
+</select>
+          
+Place Order
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="/js/checkout.js"></script>
+
+</body>
+
+</html>

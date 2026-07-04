@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header id="home">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>🛍 ShopEasy</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#categories">Categories</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-right">
+<input
+    type="search"
+    id="search-input"
+    placeholder="Search products...">
+
+                <a href="/cart" class="cart-link">
+
+                    <button class="icon-btn">
+
+                        🛒
+
+                        <span id="cart-count">0</span>
+
+                    </button>
+
+                </a>
+
+                <div id="user-area"></div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Discover Amazing Products</h1>
+
+                <p>
+
+                    Shop the latest fashion,
+                    electronics,
+                    accessories,
+                    and much more at affordable prices.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <<button
+    class="shop-btn"
+    onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+    Shop Now
+</button>
+
+                <button
+    class="learn-btn"
+    onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+    Learn More
+</button>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                    alt="Shopping">
+
+            </div>
+
+        </section>
+
+        <!-- CATEGORIES -->
+
+        <section id="categories" class="categories">
+
+            <h2>Shop by Category</h2>
+
+            <div class="category-container">
+
+                <div class="category-card" onclick="filterCategory('Electronics')">
+                    <h3>💻 Electronics</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('Fashion')">
+                    <h3>👕 Fashion</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('Shoes')">
+                    <h3>👟 Shoes</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('Watches')">
+                    <h3>⌚ Watches</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('Accessories')">
+                    <h3>🎒 Accessories</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('All')">
+                    <h3>🛍 All Products</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section id="products" class="featured-products">
+
+            <h2 id="category-title">
+
+                Featured Products
+
+            </h2>
+
+            <div
+                class="product-container"
+                id="product-container">
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section id="about" class="about-section">
+
+            <h2>About ShopEasy</h2>
+
+            <p>
+
+                ShopEasy is a modern online shopping platform built with
+                HTML, CSS, JavaScript, Node.js, Express, and MongoDB.
+                Our goal is to provide a fast, secure, and enjoyable
+                shopping experience.
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+
+                <h2>🛍 ShopEasy</h2>
+
+                <p>
+
+                    Your trusted online shopping destination.
+
+                </p>
+
+            </div>
+
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#products">Products</a></li>
+
+                    <li><a href="#" onclick="filterCategory('Shoes')">Shoes</a></li>
+
+                    <li><a href="#" onclick="filterCategory('Electronics')">Electronics</a
+                            </footer>
+
+   
+
+</body>
+<!-- FOOTER -->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+
+            <h2>🛍 ShopEasy</h2>
+
+            <p>Your trusted online shopping destination.</p>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#categories">Categories</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>Contact</h3>
+
+            <p>📍 AddisAbaba, Ethiopia</p>
+
+            <p>📞 +251 912 904 775</p>
+
+            <p>✉ support@shopeasy.com</p>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>Newsletter</h3>
+
+            <input
+                type="email"
+                id="newsletter-email"
+                placeholder="Enter your email">
+
+             <button id="subscribe-btn">
+                 Subscribe
+              </button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+
+        © 2026 ShopEasy. All Rights Reserved.
+
+    </div>
+
+</footer>
+<script src="/js/script.js"></script>
+
+</body>
+
+</html>
