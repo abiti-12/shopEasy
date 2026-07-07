@@ -15,4 +15,4 @@ router.post("/", protect, createOrder);
 // Get Logged-in User Orders
 router.get("/my-orders", protect, getMyOrders);
 
-module.exports = router;
+module.exports = routery;
